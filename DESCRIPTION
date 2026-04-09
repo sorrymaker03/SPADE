@@ -1,0 +1,28 @@
+Package: SPADE
+Title: Spatial Proximity Analysis of Differential Expression
+Version: 0.1.0
+Authors@R: c(
+    person("Mingke", "Wu", email = "mingkewu@stu.pku.edu.cn", role = c("aut", "cre"))
+  )
+Description: Performs differential expression analysis between cells near and far from a reference cell type in spatial transcriptomics data.
+License: GPL-3
+Encoding: UTF-8
+LazyData: false
+Imports:
+    Seurat (>= 4.0.0),
+    FNN,
+    ggplot2,
+    dplyr,
+    clusterProfiler,
+    org.Hs.eg.db,
+    scales,
+    SeuratObject
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat
+Depends:
+    R (>= 4.0)
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+
