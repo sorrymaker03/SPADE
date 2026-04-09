@@ -187,7 +187,7 @@ run_spade_full <- function(
       if(requireNamespace("clusterProfiler", quietly = TRUE) &&
          requireNamespace("org.Hs.eg.db", quietly = TRUE)) {
 
-        res <- markers
+        res <- markers_filtered
         res$gene <- rownames(res)
 
         res <- dplyr::mutate(res,
