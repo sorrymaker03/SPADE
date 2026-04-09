@@ -3,7 +3,7 @@
 **S**patial **P**roximity **A**nalysis of **D**ifferential **E**xpression
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![R-CMD-check](https://github.com/sorrymaker03/SPADE/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sorrymaker03/SPADE/actions/workflows/R-CMD-check.yaml)
+
 
 ## Overview
 
