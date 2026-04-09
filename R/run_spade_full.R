@@ -165,7 +165,7 @@ run_spade_full <- function(
                                        image.alpha = 0.1) +
         ggplot2::scale_fill_gradientn(
           colors = c("#440154", "#3B528B", "#21908C", "#5DC963", "#FDE725"),
-          limits = c(0, 300),
+          limits = c(0, far_dist),
           oob = scales::squish
         ) +
         ggplot2::coord_fixed()
