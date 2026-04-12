@@ -63,7 +63,7 @@ The main function run_spade_full requires a spatial transcriptomics object (e.g.
 
 Demo spatial transcriptomics dataset is derived from a human lung cancer sample (Neuroendocrine Carcinoma), provided by 10x Genomics (https://www.10xgenomics.com/datasets/human-lung-cancer-11-mm-capture-area-ffpe-2-standard). Spatial transcriptomics datasets were preprocessed using standard pipelines.
 
-# Results
+## Results
 
 We successfully demonstrate SPADE’s ability in a spatial transcriptomics dataset derived from a human lung cancer sample. To explore the impact of spatially adjacent myeloid cells on tumor cells, we utilized SPADE to analyze epi-like lung tumor cells located proximal and distal to myeloid cells.
 
