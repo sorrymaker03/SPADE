@@ -14,7 +14,6 @@ affiliations:
   - name: Department of Immunology, School of Basic Medical Sciences, Peking University, Beijing, 100191, China
     index: 1
 date: 2026-04-12
-bibliography: paper.bib
 ---
 
 # Summary
