@@ -1,0 +1,23 @@
+name: build-pdf
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build paper PDF
+        uses: openjournals/openjournals-draft-action@v1
+        with:
+          paper-path: paper.md
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper
+          path: paper.pdf
