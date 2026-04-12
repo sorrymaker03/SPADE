@@ -75,7 +75,7 @@ In parallel with this, proximal tumor cells almost completely down-regulate ener
 
 In summary, lung tumor cells located near myeloid cells undergo a state shift to metabolically quiescent and immune alert.
 
-![Figure 1](figure1.png)
+![Figure 1](./figure1.png)
 
 Figure 1. (A) Volcano plot indicates that differential expressed genes would be contaminated by adjacent cells. (B) Spatial plot shows the demo distance and group information in SPADE. (C) Volcano plot demonstrates the true differential expressed genes between tumor cells close to or far from myeloid cells. (D) GO analysis shows the up and down regulated terms. (E) GSEA analysis shows the up and down regulated terms.
 
