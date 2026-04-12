@@ -1,4 +1,4 @@
-name: build-pdf
+name: JOSS PDF
 
 on:
   push:
@@ -11,9 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build paper PDF
-        uses: openjournals/openjournals-draft-action@master
+      - name: Build paper
+        uses: openjournals/inara-action@v1
         with:
+          journal: joss
           paper-path: paper.md
 
       - name: Upload PDF
