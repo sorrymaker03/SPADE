@@ -8,6 +8,7 @@ tags:
   - differential expression
 authors:
   - name: Mingke Wu
+    orcid: 0009-0000-8873-0742
     affiliation: 1
     corresponding: true
 affiliations:
