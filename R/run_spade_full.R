@@ -165,7 +165,7 @@ run_spade_full <- function(
                                        image.alpha = 0.1) +
         ggplot2::scale_fill_gradientn(
           colors = c("#440154", "#3B528B", "#21908C", "#5DC963", "#FDE725"),
-          limits = c(0, far_dist),
+          limits = c(0, 1.5*far_dist),
           oob = scales::squish
         ) +
         ggplot2::coord_fixed()
@@ -201,7 +201,7 @@ run_spade_full <- function(
         up_genes <- res %>% dplyr::filter(p_val_adj < 0.05 & avg_log2FC > 0.25) %>% dplyr::pull(gene)
         down_genes <- res %>% dplyr::filter(p_val_adj < 0.05 & avg_log2FC < -0.25) %>% dplyr::pull(gene)
 
-        if(length(up_genes) > 0) {
+        if(length(up_genes) > 3) {
           up_df <- clusterProfiler::bitr(up_genes, fromType="SYMBOL", toType="ENTREZID",
                                          OrgDb=org.Hs.eg.db)
           ego_up <- clusterProfiler::enrichGO(up_df$ENTREZID, OrgDb=org.Hs.eg.db,
@@ -210,7 +210,7 @@ run_spade_full <- function(
           ego_up <- data.frame()
         }
 
-        if(length(down_genes) > 0) {
+        if(length(down_genes) > 3) {
           down_df <- clusterProfiler::bitr(down_genes, fromType="SYMBOL", toType="ENTREZID",
                                            OrgDb=org.Hs.eg.db)
           ego_down <- clusterProfiler::enrichGO(down_df$ENTREZID, OrgDb=org.Hs.eg.db,
