@@ -123,7 +123,7 @@ run_spade_full <- function(
                                      logfc.threshold = 0.25, min.pct = 0.1)
 
 
-      ctrl_cells <- names(celltype)[celltype %in% unlist(cell_b_list)]
+      ctrl_cells <- names(celltype)[celltype %in% unlist(cell_b)]
 
       near_cells <- colnames(obj)[obj$group == "near"]
       far_cells  <- colnames(obj)[obj$group == "far"]
@@ -151,7 +151,7 @@ run_spade_full <- function(
                                             logfc.threshold = 0.25, min.pct = 0.1)
 
         markers_filtered <- markers[!rownames(markers) %in%
-                                      rownames(ctrl_markers[ctrl_markers$avg_log2FC > 0,]), ]
+                                      rownames(ctrl_markers[ctrl_markers$p_val_adj<0.05,]), ]
       } else {
         markers_filtered <- markers
       }
